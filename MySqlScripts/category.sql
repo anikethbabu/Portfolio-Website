@@ -1,11 +1,11 @@
 INSERT INTO FOOD_CATEGORY (CATEGORY_NAME,IMAGE_FILE_NAME)
-VALUES ('Specialty Pizza','speciality.png');
+VALUES ('Specialty Pizza','specialty.png');
 INSERT INTO FOOD_CATEGORY (CATEGORY_NAME,IMAGE_FILE_NAME)
 VALUES ('Breads & Oven-Baked Dips','breadandovenbakeddips.png');
 INSERT INTO FOOD_CATEGORY (CATEGORY_NAME,IMAGE_FILE_NAME)
-VALUES ('Chikcen','Speciality.png');
+VALUES ('Chicken','chicken.png');
 INSERT INTO FOOD_CATEGORY (CATEGORY_NAME,IMAGE_FILE_NAME)
-VALUES ('Desserts','desserts.png');
+VALUES ('Desserts','dessert.png');
 INSERT INTO FOOD_CATEGORY (CATEGORY_NAME,IMAGE_FILE_NAME)
 VALUES ('Pasta','pasta.png');
 INSERT INTO FOOD_CATEGORY (CATEGORY_NAME,IMAGE_FILE_NAME)

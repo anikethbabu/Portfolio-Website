@@ -12,27 +12,16 @@
     <div class="container">
        
         <div class="row m-5">
+            {% for item in data %}
             <div class="col-3">
                 <div class="embed-responsive embed-responsive-1by1 text-center">
                     <div class="embed-responsive-item bg-primary">
-                        <img src="/static/specialty.png" class="img-thumbnail">
+                        <img src="static/{{item[2]}}" class="img-thumbnail">
+                        <p>{{item[1]}}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-3">
-                <div class="embed-responsive embed-responsive-1by1 text-center">
-                    <div class="embed-responsive-item bg-primary">
-                        <img src="/static/breadandovenbakeddips.png" class="img-thumbnail">
-                    </div>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="embed-responsive embed-responsive-1by1 text-center">
-                    <div class="embed-responsive-item bg-primary">
-                    <img src="/static/chicken.png" class="img-thumbnail">
-                </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
     
