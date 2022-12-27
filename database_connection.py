@@ -10,6 +10,8 @@ def connect_to_data():
 
     mycursor = mydb.cursor()
 
+    
+
     mycursor.execute("SELECT * FROM FOOD_CATEGORY")
 
     myresult = mycursor.fetchall()
