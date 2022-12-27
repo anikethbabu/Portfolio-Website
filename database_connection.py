@@ -17,3 +17,21 @@ def connect_to_data():
     myresult = mycursor.fetchall()
     
     return myresult
+
+def connect_to_data2():
+    mydb = mysql.connector.connect(
+    host="localhost",
+    user="root",
+    password="root",
+    database="RESTAURANT",
+    port = 3307
+    )
+
+    mycursor = mydb.cursor()
+    
+    mycursor.execute("SELECT * FROM DISH")
+
+    myresult = mycursor.fetchall()
+    
+    return myresult
+    
