@@ -18,7 +18,7 @@ def connect_to_data():
     
     return myresult
 
-def connect_to_data2():
+def connect_to_data2(categoryid):
     mydb = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -29,7 +29,7 @@ def connect_to_data2():
 
     mycursor = mydb.cursor()
     
-    mycursor.execute("SELECT * FROM DISH")
+    mycursor.execute("SELECT * FROM DISH WHERE category_id = {};".format(categoryid))
 
     myresult = mycursor.fetchall()
     

@@ -9,9 +9,8 @@ def hello():
     
     return render_template('index.html', data = connect_to_data())
 
-@app.route('/dish')
-def dish():
-    
-    return render_template('dish.html', data = connect_to_data2())
+@app.route('/dish/<int:categoryid>')
+def dish(categoryid):
+    return render_template('dish.html', data = connect_to_data2(str(categoryid)))
 
 app.run(debug=True)
